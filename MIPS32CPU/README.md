@@ -14,20 +14,20 @@
 
 MIPS32CPU/  
 ├── head/  
-│   └── defines.v  
+│\ \ \ └── defines.v  
 │
 ├── source/  
-│   ├── design/  
-│   │   ├── pc_reg.v  
-│   │   └── if_id.v  
-│   │
-│   └── sim/  
-│       └── tb_pc_reg.v  
+│\ \ \ ├── design/  
+│\ \ \ │\ \ \ ├── pc_reg.v  
+│\ \ \ │\ \ \ └── if_id.v  
+│\ \ \ │
+│\ \ \ └── sim/  
+│\ \ \ \ \ \ \ └── tb_pc_reg.v  
 │
 ├── build/  
-│   ├── a.out  
-│   └── wave.vcd  
-│   ...  
+│\ \ \ ├── a.out  
+│\ \ \ └── wave.vcd  
+│\ \ \ ...  
 │
 ├── Makefile  
 │
@@ -42,4 +42,3 @@ MIPS32CPU/
 - `make pc_reg` : 编译pc_reg.v，生成pc_reg.out。  
 - `make tb_pc_reg` : 编译链接pc_reg.v、tb_pc_reg.v，生成a.out、wave.vcd，并自动打开gtkwave。  
 - `make clean` : 删除build目录下所有文件。  
-
