@@ -13,30 +13,7 @@
 ## 项目结构
 
 ```
-<div>
-
-MIPS32CPU/  
-├── head/  
-│   └── defines.v  
-│
-├── source/  
-│   ├── design/  
-│   │   ├── pc_reg.v  
-│   │   └── if_id.v  
-│   │
-│   └── sim/  
-│       └── tb_pc_reg.v  
-│
-├── build/  
-│   ├── a.out  
-│   └── wave.vcd  
-│   ...  
-│
-├── Makefile  
-│
-└── README.md
-
-</div>
+MIPS32CPU/ ├── head/ │ └── defines.v │ ├── source/ │ ├── design/ │ │ ├── pc_reg.v │ │ └── if_id.v │ │ │ └── sim/ │ └── tb_pc_reg.v │ ├── build/ │ ├── a.out │ └── wave.vcd │ ... │ ├── Makefile │ └── README.md
 ```
 
 ## 下载
