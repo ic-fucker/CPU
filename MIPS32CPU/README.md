@@ -35,10 +35,46 @@
 
 ## 下载
 
-`git clone https://github.com/ic-fucker/cpu.git`
-
+```
+git clone https://github.com/ic-fucker/cpu.git
+```
 ## Makefile的使用
 
-- `make pc_reg` : 编译pc_reg.v，生成pc_reg.out。  
-- `make tb_pc_reg` : 编译链接pc_reg.v、tb_pc_reg.v，生成a.out、wave.vcd，并自动打开gtkwave。  
-- `make clean` : 删除build目录下所有文件。  
+- 
+```
+make pc_reg
+```
+: 编译pc_reg.v，生成pc_reg.out。  
+- 
+```
+make tb_pc_reg
+```
+: 编译链接pc_reg.v、tb_pc_reg.v，生成a.out、wave.vcd，并自动打开gtkwave。  
+- 
+```
+make clean
+```
+: 删除build目录下所有文件。  
+
+## 进度
+
+### Chapter II
+
+- [x] defines.v
+- [x] pc_reg.v
+- [x] tb_pc_reg.v
+- [x] if_id.v
+- [ ] regfile.v
+- [ ] id.v
+- [ ] id_ex.v
+- [ ] ex.v
+- [ ] ex_mem.v
+- [ ] mem.v
+- [ ] mem_wb.v
+- [ ] cpu.v
+- [ ] inst_rom.v
+- [ ] min_sopc.v
+- [ ] inst_rom.S
+- [ ] tb_cpu.v
+
+
