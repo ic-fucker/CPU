@@ -7,7 +7,7 @@ module pc_reg (
 );
 
     always @ (posedge clk) begin
-        if (rst == `RstEnable) begin
+        if (rst == `RstEnable) begin        //ce logic
             ce <= `ChipDisable;
         end else begin
             ce <= `ChipEnable;
@@ -15,7 +15,7 @@ module pc_reg (
     end
 
     always @ (posedge clk) begin
-        if (ce == `ChipDisable) begin
+        if (ce == `ChipDisable) begin       //pc logic
             pc <= `ZeroWord;
         end else begin
             pc <= pc + 4'h4;
