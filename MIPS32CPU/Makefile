@@ -15,6 +15,9 @@ pc_reg.out:		$(DESIGN)pc_reg.v $(DEFINE) Makefile
 if_id.out:		$(DESIGN)if_id.v $(DEFINE) Makefile
 	$(VERILOG) $(BUILD)if_id.out $(DESIGN)if_id.v 
 
+regfile.out:	$(DESIGN)regfile.v $(DEFINE) Makefile
+	$(VERILOG) $(BUILD)regfile.out $(DESIGN)regfile.v
+
 #command
 
 pc_reg:
@@ -27,8 +30,15 @@ tb_pc_reg:
 if_id:
 	make if_id.out
 
+regfile:
+	make regfile.out
+
+tb_regfile:
+	$(VERILOG) $(BUILD)a.out $(DESIGN)regfile.v $(SIM)tb_regfile.v
+	make sim
+
 sim:		$(BUILD)a.out Makefile
-	vvp -n $(BUILD)a.out
+	vvp -n $(BUILD)a.out -lxt2
 	gtkwave $(BUILD)wave.vcd
 
 clean:

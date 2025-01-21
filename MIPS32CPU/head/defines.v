@@ -56,4 +56,4 @@
 `define DoubleRegBus    63:0
 `define RegNum          32
 `define RegNumLog2      5
-`define NopRegAddr      5'b00000
+`define NOPRegAddr      5'b00000
