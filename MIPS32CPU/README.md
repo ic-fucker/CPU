@@ -43,6 +43,8 @@ git clone https://github.com/ic-fucker/cpu.git
 
 - ``` make pc_reg ``` : 编译pc_reg.v，生成pc_reg.out。  
 - ``` make tb_pc_reg ``` : 编译链接pc_reg.v、tb_pc_reg.v，生成a.out、wave.vcd，并自动打开gtkwave。  
+- ` make regfile ` : 编译regfile.v，生成regfile.out。
+- ` make tb_regfile ` : 编译链接regfile.v、tb_regfile.v，生成a.out、wave.vcd，并自动打开gtkwave。
 - ``` make clean ``` : 删除build目录下所有文件。  
 
 ## 进度
@@ -53,7 +55,7 @@ git clone https://github.com/ic-fucker/cpu.git
 - [x] pc_reg.v
 - [x] tb_pc_reg.v
 - [x] if_id.v
-- [ ] regfile.v
+- [x] regfile.v
 - [ ] id.v
 - [ ] id_ex.v
 - [ ] ex.v
