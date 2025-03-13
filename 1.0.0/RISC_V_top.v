@@ -7,40 +7,46 @@ module RISC_V_TOP (
     output wire[`RegBus] rom_addr_o,
     output wire rom_ce_o
 );
+// pc
+wire pc_wd;
+// pc -> if_id;
+wire ifid_wd;
 //connect if/id to id
 wire[`InstAddrBus] pc;
 wire[`InstAddrBus] id_pc_i;
 wire[`InstBus]     id_inst_i;
+wire               id_wd;
 
 //connect id to id/ex
+
 wire[`AluOpBus] id_aluop_o;
 wire[`AluFunct3Bus] id_alufunct3_o;
 wire[`RegBus] id_reg1_o;
 wire[`RegBus] id_reg2_o;
-wire id_wreg_o;
-wire[`RegAddrBus] id_wd_o;
+wire id_wd_o;
+wire[`RegAddrBus] id_wreg_o;
 
 //id/ex to ex
 wire[`AluOpBus] ex_aluop_i;
 wire[`AluFunct3Bus] ex_alufunct3_i;
 wire[`RegBus] ex_reg1_i;
 wire[`RegBus] ex_reg2_i;
-wire ex_wreg_i;
-wire[`RegAddrBus] ex_wd_i;
+wire ex_wd_i;
+wire[`RegAddrBus] ex_wreg_i;
 
 //ex to ex/wb
-wire ex_wreg_o;
-wire[`RegAddrBus] ex_wd_o;
+wire ex_wd_o;
+wire[`RegAddrBus] ex_wreg_o;
 wire[`RegBus] ex_wdata_o;
 
 //ex_wb to wb
-wire wb_wreg_i;
-wire[`RegAddrBus] wb_wd_i;
+wire wb_wd_i;
+wire[`RegAddrBus] wb_wreg_i;
 wire[`RegBus] wb_wdata_i;
 
 //wb to regfile
-wire wb_wreg_o;
-wire[`RegAddrBus] wb_wd_o;
+wire wb_wd_o;
+wire[`RegAddrBus] wb_wreg_o;
 wire[`RegBus] wb_wdata_o;
 
 //id to regfile
@@ -55,8 +61,11 @@ wire[`RegAddrBus] reg2_addr;
 pc_reg pc_reg0(
     .clk(clk),
     .rst(rst),
+    .pc_wd(pc_wd),
+
     .pc(pc),
-    .ce(rom_ce_o)
+    .ce(rom_ce_o),
+    .ifid_wd(ifid_wd)
 );
 
 assign rom_addr_o = pc;
@@ -65,10 +74,13 @@ assign rom_addr_o = pc;
 if_id if_id0(
     .clk(clk),
     .rst(rst),
+    .ifid_wd(ifid_wd),
+
     .if_pc(pc),
     .if_inst(rom_data_i),
     .id_pc(id_pc_i),
-    .id_inst(id_inst_i)
+    .id_inst(id_inst_i),
+    .id_wd(id_wd)
 );
 
 //id module
@@ -97,8 +109,8 @@ id id0(
 regfile regfile1(
     .clk(clk),
     .rst(rst),
-    .we(wb_wreg_o),
-    .waddr(wb_wd_o),
+    .we(wb_wd_o),
+    .waddr(wb_wreg_o),
     .wdata(wb_wdata_o),
     .re1(reg1_read),
     .raddr1(reg1_addr),
@@ -171,7 +183,10 @@ wb wb0(
     .wb_wdata(wb_wdata_o),
     .wb_wd(wb_wd_o)
 );
-
+assign pc_wd = wb_wd_o;
+    initial begin
+        $monitor("we = %b \t waddr = %h \t wdata = %h \t re1 = %b \t raddr1 = %d rdata1 = %h \t re2 = %b \t raddr2 = %d rdata2 = %h \n",wb_wreg_o, wb_wd_o, wb_wdata_o, reg1_read, reg1_addr, reg1_data, reg2_read, reg2_addr ,reg2_data);
+    end
 
 endmodule
 

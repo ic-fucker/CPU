@@ -8,15 +8,15 @@ module id_ex (
     input wire[`AluFunct3Bus]   id_alufunct3,
     input wire[`RegBus]         id_reg1,
     input wire[`RegBus]         id_reg2,
-    input wire[`RegAddrBus]     id_wd,
-    input wire id_wreg,
+    input wire[`RegAddrBus]     id_wreg,
+    input wire id_wd,
     //output to execute stage
     output reg[`AluOpBus]       ex_aluop,
     output reg[`AluFunct3Bus]   ex_alufunct3,
     output reg[`RegBus]         ex_reg1,
     output reg[`RegBus]         ex_reg2,
-    output reg[`RegAddrBus]     ex_wd,
-    output reg                  ex_wreg
+    output reg[`RegAddrBus]     ex_wreg,
+    output reg                  ex_wd
 );
 
 always @(posedge clk) begin
@@ -25,8 +25,8 @@ always @(posedge clk) begin
         ex_alufunct3 <= `EXE_NOP_FUNCT3;
         ex_reg1 <= `ZeroWord;
         ex_reg2 <= `ZeroWord;
-        ex_wd <= `NOPRegAddr;
-        ex_wreg <= `WriteDisable;
+        ex_wreg <= `NOPRegAddr;
+        ex_wd <= `WriteDisable;
     end else begin
         ex_aluop <= id_aluop;
         ex_alufunct3 <= id_alufunct3;     

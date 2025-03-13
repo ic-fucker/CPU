@@ -59,5 +59,8 @@ module regfile (
             rdata2 <= `ZeroWord;
         end
     end
-
-endmodule
+    
+    initial begin
+        $monitor("x3: %d, x4: %d", regs[3], regs[4]);
+    end
+    endmodule

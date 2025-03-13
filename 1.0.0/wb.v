@@ -11,7 +11,7 @@ module wb(
 );
 
 always @(posedge clk or negedge rst) begin
-    if (!rst) begin
+    if (rst == `RstEnable) begin
         wb_wd    <= 0;
         wb_wreg  <= 0;
         wb_wdata <= 0;

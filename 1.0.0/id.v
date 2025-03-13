@@ -17,8 +17,8 @@ module id (
     output reg  [`AluFunct3Bus] alufunct3_o,
     output reg  [`RegBus]       reg1_o,
     output reg  [`RegBus]       reg2_o,
-    output reg  [`RegAddrBus]   wd_o,
-    output reg                  wreg_o
+    output reg  [`RegAddrBus]   wreg_o,
+    output reg                  wd_o
 );
 
 // break down the binary code
@@ -36,8 +36,8 @@ always @(*) begin
     if(rst ==`RstEnable) begin
         aluop_o <= `EXE_I_TYPE_OP;
         alufunct3_o <= `EXE_NOP_FUNCT3;
-        wd_o   <= `NOPRegAddr;
-        wreg_o <= `WriteDisable;
+        wreg_o   <= `NOPRegAddr;
+        wd_o <= `WriteDisable;
         instvaild <= `InstVaild;
         reg1_read_o <= 1'b0;
         reg2_addr_o <= 1'b0;
@@ -47,25 +47,25 @@ always @(*) begin
     end else begin
         aluop_o <= `EXE_I_TYPE_OP;
         alufunct3_o <= `EXE_NOP_FUNCT3;
-        wd_o   <= inst_i[11:7];
-        wreg_o <= `WriteDisable;
+        wreg_o   <= inst_i[11:7];
+        wd_o <= `WriteDisable;
         instvaild <= `InstInvaild;
         reg1_read_o <= 1'b0;
         reg2_read_o <= 1'b0;
-        reg1_addr_o <= inst_i[25:21];//default read from regfile pole one
-        reg2_addr_o <= inst_i[19:15];//default read from regfile pole two
+        reg1_addr_o <= inst_i[19:15];//default read from regfile pole one
+        reg2_addr_o <= inst_i[25:21];//default read from regfile pole two
         imm <= `ZeroWord;       
     case (op)
         `EXE_I_TYPE_OP:   begin   //I-type confirmed   
         case (funt3)
             `EXE_ADDI_FUNCT3:   begin
-            wreg_o <= `WriteEnable;       
+            wd_o <= `WriteEnable;       
             aluop_o <= `EXE_I_TYPE_OP;        
             alufunct3_o <= `EXE_ADDI_FUNCT3;  
             reg1_read_o <= 1'b1;        
             reg2_read_o <= 1'b0;
             imm <= {4'h0, inst_i[31:20]};
-            wd_o <= inst_i[20:16];
+            wreg_o <= inst_i[11:7];
             instvaild <= `InstVaild;
             end
 
