@@ -10,18 +10,25 @@ module pc_reg(
 	output reg                                          ce, //the whole ce which is controled by rst
 	output reg                                          ifid_wd
 );
+
+
 always @ (posedge clk) begin
 	if (ce == `ChipDisable) begin
 		pc <= 32'h00000000;
 	end 
 	else begin
-	if(pc_wd)begin
- 		pc <= pc + 4'h4;
-		ifid_wd<='d1;
+		if(pc_wd)begin
+ 			pc <= pc + 4'h4;
+			ifid_wd <= 1'b1;
+		end
+		else begin
+	    	ifid_wd <= 1'b0;
+		end
 	end
-	else
-	    ifid_wd<='d0;
-	end
+end
+
+always @(negedge rst) begin
+	ifid_wd <= 1'b1;
 end
 
 
@@ -32,5 +39,7 @@ always @ (posedge clk) begin
 		ce <= `ChipEnable;
 	end
 end
+
+
 
 endmodule

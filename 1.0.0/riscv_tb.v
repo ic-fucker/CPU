@@ -43,7 +43,7 @@ module riscv_tb();
     end
     initial begin            
 		$dumpfile("./build/wave.vcd"); //生成的vcd文件名称
-		$dumpvars(0, riscv_tb);    //tb模块名称
+		$dumpvars;    //tb模块名称
     end
 
  endmodule

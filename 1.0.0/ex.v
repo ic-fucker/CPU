@@ -3,7 +3,7 @@ module ex(
 
 	input wire					  rst,
 	
-	//送到执行阶段的信�?
+	//送到执行阶段的信�?
 	input wire[`AluOpBus]         aluop_i,
 	input wire[`AluFunct3Bus]     alufunct3_i,
 	input wire[`RegBus]           reg1_i,
@@ -27,6 +27,8 @@ module ex(
                     case (alufunct3_i)
                         `EXE_ADDI_FUNCT3:           begin
 					        wdata_o <= reg1_i + reg2_i;
+							// alu deside write back
+							// wd_o <= `WriteEnable;
                         end
                     default:    begin
                     end

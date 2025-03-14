@@ -1,4 +1,5 @@
-BUILD = ./build/
+BUILD = .\build\\
+
 HEAD = $(DEFINE)
 
 DEFINE = define.v
@@ -11,3 +12,5 @@ $(OUTPUT):	./*.v
 
 sim:	$(OUTPUT)
 	vvp -n $(OUTPUT) -lxt2
+clean:
+	del $(BUILD)*.*

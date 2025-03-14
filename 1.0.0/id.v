@@ -7,6 +7,8 @@ module id (
     //read the value of Regfile
     input wire  [`RegBus]       reg1_data_i,
     input wire  [`RegBus]       reg2_data_i,
+
+    input wire                  wd_i,
     //output to Regfile
     output reg                  reg1_read_o,
     output reg                  reg2_read_o,
@@ -59,7 +61,7 @@ always @(*) begin
         `EXE_I_TYPE_OP:   begin   //I-type confirmed   
         case (funt3)
             `EXE_ADDI_FUNCT3:   begin
-            wd_o <= `WriteEnable;       
+            wd_o <= wd_i;       
             aluop_o <= `EXE_I_TYPE_OP;        
             alufunct3_o <= `EXE_ADDI_FUNCT3;  
             reg1_read_o <= 1'b1;        

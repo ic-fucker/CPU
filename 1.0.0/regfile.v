@@ -60,7 +60,9 @@ module regfile (
         end
     end
     
-    initial begin
-        $monitor("x3: %d, x4: %d", regs[3], regs[4]);
-    end
-    endmodule
+    always @(negedge we) begin
+        $display("x3: %d, x4: %d", regs[3], regs[4]);
+    end 
+
+    
+endmodule

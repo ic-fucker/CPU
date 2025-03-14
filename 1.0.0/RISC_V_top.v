@@ -74,10 +74,11 @@ assign rom_addr_o = pc;
 if_id if_id0(
     .clk(clk),
     .rst(rst),
-    .ifid_wd(ifid_wd),
 
+    .ifid_wd(ifid_wd),
     .if_pc(pc),
     .if_inst(rom_data_i),
+
     .id_pc(id_pc_i),
     .id_inst(id_inst_i),
     .id_wd(id_wd)
@@ -92,6 +93,7 @@ id id0(
     .reg1_data_i(reg1_data),
     .reg2_data_i(reg2_data),
 
+    .wd_i(id_wd),
     // output to regfile
     .reg1_read_o(reg1_read),
     .reg2_read_o(reg2_read),
@@ -184,9 +186,8 @@ wb wb0(
     .wb_wd(wb_wd_o)
 );
 assign pc_wd = wb_wd_o;
-    initial begin
-        $monitor("we = %b \t waddr = %h \t wdata = %h \t re1 = %b \t raddr1 = %d rdata1 = %h \t re2 = %b \t raddr2 = %d rdata2 = %h \n",wb_wreg_o, wb_wd_o, wb_wdata_o, reg1_read, reg1_addr, reg1_data, reg2_read, reg2_addr ,reg2_data);
-    end
+    
+
 
 endmodule
 
