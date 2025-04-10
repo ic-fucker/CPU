@@ -1,5 +1,5 @@
 module WB(
-	input			[31:0]	RAM_Data,
+	input			[31:0]		RAM_Data,
     input        [31:0]    PC_Plua4,
     input        [31:0]    EX_Data,
     input        [ 1:0]    WB_Ctrl,
