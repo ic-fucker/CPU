@@ -1,33 +1,12 @@
-module wb(
-    input                  rst,
-    input                  clk,
-    input        [ 4:0]    ex_wreg,
-    input        [31:0]    ex_wdata,
-    input                  ex_wd,
+module WB(
+		input					[31:0]		RAM_Data
+    input        [31:0]    PC_Plua4,
+    input        [31:0]    EX_Data,
+    input        [ 1:0]    WB_Ctrl,
     
-    output  reg  [ 4:0]    wb_wreg,
-    output  reg  [31:0]    wb_wdata,
-    output  reg            wb_wd
+    output  reg  [31:0]    WB_Data
 );
 
-always @(posedge clk or negedge rst) begin
-    if (rst == `RstEnable) begin
-        wb_wd    <= 0;
-        wb_wreg  <= 0;
-        wb_wdata <= 0;
-    end
-    else begin
-        if(ex_wd) begin
-            wb_wd    <= 1;
-            wb_wreg  <= ex_wreg;
-            wb_wdata <= ex_wdata;
-        end
-        else begin
-            wb_wd    <= 0;
-            wb_wreg  <= 0;
-            wb_wdata <= 0;
-        end
-    end
-end
+assign WB_Data = WB_Ctrl[0] == 0 ? (WB_Ctrl[1] == 0 ? RAM_Data : PC_Plus4) : EX_Data
 
 endmodule
