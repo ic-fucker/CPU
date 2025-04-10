@@ -14,7 +14,7 @@ module ex(
 	
 	output reg[`RegAddrBus]       wreg_o,
 	output reg                    wd_o,
-	output reg[`RegBus]	      wdata_o
+	output reg[`RegBus]		      wdata_o
 	
 );
 
