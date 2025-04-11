@@ -73,7 +73,7 @@ always @(*) begin
         EX:
             begin
                 imm_en  = ALUSEL[5];
-                EXPC_en = ALUSEL[2:1] == 2'b11 ? 1 : 0;
+                EXPC_en = ALUSEL[2:1] == 2'b01 ? 1 : 0;
                 PC_en   = 0;
                 ID_en   = 0;
                 EX_en   = 1;
