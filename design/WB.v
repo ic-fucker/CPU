@@ -7,6 +7,6 @@ module WB(
     output  [31:0]  WB_Data
 );
 
-assign WB_Data = WB_Ctrl[0] == 0 ? (WB_Ctrl[1] == 0 ? RAM_Data : PC_Plus4) : EX_Data;
+assign WB_Data = WB_Ctrl[0] ? EX_Data : (WB_Ctrl[1] ? PC_Plus4 : RAM_Data);
 
 endmodule
