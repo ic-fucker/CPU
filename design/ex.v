@@ -22,14 +22,14 @@ module ex (
     output  reg  [`DataBus   ]       alu_result
 );
 
-wire input_1;
-wire input_2;
+wire [`DataBus]input_1;
+wire [`DataBus]input_2;
 
 assign input_1 = pc_en ? pc : reg_1;
 assign input_2 = imm_en ? imm : reg_2;
 
 always @(posedge en or negedge rst) begin
-    if (rst == `RstEnable) begin
+    if (!rst) begin
         alu_result <= `DefaultAluResult;
     end
     else begin
