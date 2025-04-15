@@ -22,8 +22,8 @@ module ex (
     output  reg  [`DataBus   ]       alu_result
 );
 
-wire [`DataBus]input_1;
-wire [`DataBus]input_2;
+wire [`DataBus]  input_1;
+wire [`DataBus]  input_2;
 
 assign input_1 = pc_en ? pc : reg_1;
 assign input_2 = imm_en ? imm : reg_2;
