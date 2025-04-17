@@ -1,3 +1,5 @@
+`ifndef DEFINES_V
+`define DEFINES_V
 // global define
 `define RstEnable 1'b0
 `define RstDisable 1'b1
@@ -59,25 +61,25 @@
 //`define EXE_OR_OP 
 //`define EXE_ADD_OP 
 `define EXE_NOP_OP        3'b000//0
-`define EXE_OR_OP         3'b001//1
-`define EXE_AND_OP        3'b010//2
-`define EXE_XOR_OP        3'b011//3
+`define EXE_OR_OP         3'b000//0
+`define EXE_AND_OP        3'b001//1
+`define EXE_XOR_OP        3'b010//2
                           
-`define EXE_ADD_OP        3'b100//4
-`define EXE_SUB_OP        3'b101//5
+`define EXE_ADD_OP        3'b011//3
+`define EXE_SUB_OP        3'b100//4
                           
-`define EXE_LW_OP         3'b101//4
-`define EXE_SW_OP         3'b101//4
+`define EXE_LW_OP         3'b011//3
+`define EXE_SW_OP         3'b011//3
                           
-`define EXE_BEQ_OP        3'b101//4
-`define EXE_BNE_OP        3'b101//4
-`define EXE_BLT_OP        3'b101//4
-`define EXE_BGE_OP        3'b101//4
-`define EXE_BLTU_OP       3'b101//4
-`define EXE_BGEU_OP       3'b101//4
+`define EXE_BEQ_OP        3'b011//3
+`define EXE_BNE_OP        3'b011//3
+`define EXE_BLT_OP        3'b011//3
+`define EXE_BGE_OP        3'b011//3
+`define EXE_BLTU_OP       3'b011//3
+`define EXE_BGEU_OP       3'b011//3
                           
-`define EXE_JAL_OP        3'b101//4
-`define EXE_JALR_OP       3'b101//4
+`define EXE_JAL_OP        3'b011//3
+`define EXE_JALR_OP       3'b011//3
 
 //transer define
 `define Branch      1'b1//transer 
@@ -100,3 +102,5 @@
 `define RegNum        32 //the num of reg
 `define RegNumLog2    5 //the num of common reg
 `define NOPRegAddr    5'b00000
+
+`endif

@@ -22,7 +22,7 @@ always@(posedge pc_en or negedge rst)begin
             pc<=branch;
         end
         else begin
-            pc<=pc+4;
+            pc<=pc_plus_4;
         end
     end
     else begin

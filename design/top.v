@@ -45,14 +45,7 @@ wire 		[ 31:0] 			WB_Data;
 wire 		[ 31:0] 			load_data_out;
 wire 		[ 31:0] 			gpio_out;
 
-Control_Uint #(
-	.PC   	( 000  ),
-	.ID   	( 001  ),
-	.EX   	( 010  ),
-	.MEM  	( 011  ),
-	.WB   	( 100  ),
-	.Jump 	( 100  ))
-u_Control_Uint(
+Control_Uint u_Control_Uint(
 	.clk     			( clk      		),
 	.rst     			( rst      		),
 	.ALUSEL  			( alusel_o 		),
