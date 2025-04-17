@@ -49,7 +49,7 @@ begin
         end
 end
 
-always @(*) begin
+always @(st_cur) begin
     case (st_cur)
         PC: 
             begin
