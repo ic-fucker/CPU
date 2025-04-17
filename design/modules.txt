@@ -1,0 +1,10 @@
+Control_Unit.v
+pc.v
+id.v
+ex.v
+mem.v
+WB.v
+regfile.v
+../peripherals/inst_rom.v
+../peripherals/RAM.v
+top.v

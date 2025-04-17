@@ -54,49 +54,39 @@
         </entry>
         <entry>
           <string>Width</string>
-          <int>8</int>
+          <int>10</int>
         </entry>
         <entry>
           <string>CodeFile</string>
           <file>D:\CPU\design\ex.v</file>
         </entry>
       </elementAttributes>
-      <pos x="920" y="140"/>
+      <pos x="900" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>Clock</elementName>
       <elementAttributes>
         <entry>
-          <string>Frequency</string>
-          <int>2</int>
-        </entry>
-        <entry>
           <string>runRealTime</string>
           <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Frequency</string>
+          <int>2</int>
         </entry>
       </elementAttributes>
       <pos x="340" y="40"/>
     </visualElement>
     <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1200" y="220"/>
-    </visualElement>
-    <visualElement>
       <elementName>ExternalFile</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>WB</string>
-        </entry>
-        <entry>
           <string>applicationType</string>
           <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>WB</string>
         </entry>
         <entry>
           <string>externalInputs</string>
@@ -108,154 +98,14 @@
         </entry>
         <entry>
           <string>Width</string>
-          <int>9</int>
+          <int>10</int>
         </entry>
         <entry>
           <string>CodeFile</string>
           <file>D:\CPU\design\WB.v</file>
         </entry>
       </elementAttributes>
-      <pos x="1200" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1420" y="360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>7</int>
-        </entry>
-      </elementAttributes>
-      <pos x="400" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="260"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="280"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="340"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes/>
-      <pos x="740" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1120" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1120" y="360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="1" z="false"/>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="70" z="false"/>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="6" z="false"/>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="260"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="4" z="false"/>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>3</int>
-        </entry>
-        <entry>
-          <string>InDefault</string>
-          <value v="3" z="false"/>
-        </entry>
-      </elementAttributes>
-      <pos x="820" y="340"/>
+      <pos x="900" y="740"/>
     </visualElement>
     <visualElement>
       <elementName>Button</elementName>
@@ -267,19 +117,998 @@
       </elementAttributes>
       <pos x="340" y="-20"/>
     </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>id</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>rst,inst_i:32,reg1_data_i:32,reg2_data_i:32,id_en</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>// global define
+`define RstEnable 1&apos;b1
+`define RstDisable 1&apos;b0
+`define WriteEnable 1&apos;b1
+`define WriteDisable 1&apos;b0
+`define ReadEnable 1&apos;b1
+`define ReadDisable 1&apos;b0
+`define AluOpBus    2:0 //the width of translation aluop_o
+`define AluSelBus   6:0 //the width of translation alusel_o
+`define InstValid   1&apos;b0 //vaild operator
+`define InstInvalid 1&apos;b1 //invaild operator
+`define True_v      1&apos;b1//meaning true
+`define False_v     1&apos;b0//meaning false
+`define ChipDisable 1&apos;b0//chip enable
+`define ChipEnable  1&apos;b1//chip ban
+
+//opcode
+`define EXE_R_OP          7&apos;b0110011//R type opcode
+`define EXE_I_OP          7&apos;b0010011//I type opcode
+`define EXE_B_OP          7&apos;b1100011//B type opcode
+
+//special 4 instructions opcode
+`define EXE_LW        7&apos;b0000011
+`define EXE_SW        7&apos;b0100011
+`define EXE_JAL       7&apos;b1101111
+`define EXE_JALR      7&apos;b1100111
+
+//func3
+`define EXE_OR            3&apos;b110
+`define EXE_AND           3&apos;b111
+`define EXE_ORI           3&apos;b110
+`define EXE_ADDI          3&apos;b000
+`define EXE_ANDI          3&apos;b111
+`define EXE_BEQ           3&apos;b000
+`define EXE_BNE           3&apos;b001 
+`define EXE_BLT           3&apos;b100
+`define EXE_BGE           3&apos;b101
+`define EXE_BLTU          3&apos;b110
+`define EXE_BGEU          3&apos;b111
+`define EXE_XOR           3&apos;b100
+`define EXE_XORI          3&apos;b100
+
+// func7
+`define EXE_ADD           7&apos;b0000000 
+`define EXE_SUB           7&apos;b0100000
+
+//AluSel
+`define EXE_RES_NOP                      7&apos;b0000000
+`define EXE_RES_R                        7&apos;b0000101
+`define EXE_RES_I                        7&apos;b0100101
+`define EXE_RES_LW                       7&apos;b0101001
+`define EXE_RES_SW                       7&apos;b0111001
+`define EXE_RES_B                        7&apos;b1100010
+`define EXE_RES_NB                       7&apos;b0000000
+`define EXE_RES_JAL                      7&apos;b1100011
+`define EXE_RES_JALR                     7&apos;b1100111
+
+//Aluop
+//`define EXE_OR_OP 
+//`define EXE_ADD_OP 
+`define EXE_NOP_OP        3&apos;b000//0
+`define EXE_OR_OP         3&apos;b001//1
+`define EXE_AND_OP        3&apos;b010//2
+`define EXE_XOR_OP        3&apos;b011//3
+                          
+`define EXE_ADD_OP        3&apos;b100//4
+`define EXE_SUB_OP        3&apos;b101//5
+                          
+`define EXE_LW_OP         3&apos;b101//4
+`define EXE_SW_OP         3&apos;b101//4
+                          
+`define EXE_BEQ_OP        3&apos;b101//4
+`define EXE_BNE_OP        3&apos;b101//4
+`define EXE_BLT_OP        3&apos;b101//4
+`define EXE_BGE_OP        3&apos;b101//4
+`define EXE_BLTU_OP       3&apos;b101//4
+`define EXE_BGEU_OP       3&apos;b101//4
+                          
+`define EXE_JAL_OP        3&apos;b101//4
+`define EXE_JALR_OP       3&apos;b101//4
+
+//transer define
+`define Branch      1&apos;b1//transer 
+`define NotBranch   1&apos;b0//not transfer
+
+//instruction memory about rom
+`define ZeroWord    32&apos;h00000000
+`define InstAddrBus 31:0  //address
+`define InstBus     31:0 //Data
+`define InstMemNum  131071 //rom fact size 128K
+`define InstMemNumLog2 17     //the real width of rom
+
+
+//************************ reg total define
+`define RegAddrBus  4:0   //regfile addr width
+`define RegBus      31:0  //regfile data width
+`define RegWidth    32    //in common use reg width
+`define DoubleRegwidth 64 // double reg width
+`define DoubleRegBus  63:0 //double data width
+`define RegNum        32 //the num of reg
+`define RegNumLog2    5 //the num of common reg
+`define NOPRegAddr    5&apos;b00000
+
+module id(
+    input wire                  rst,
+    input wire  [`InstBus]      inst_i,   
+    //read the value of Regfile
+    input wire  [`RegBus]       reg1_data_i,//the data from reg1
+    input wire  [`RegBus]       reg2_data_i,//the data from reg2
+
+    input wire                  id_en,      //the enable signal come from if_id module
+    //output to Regfile
+    output reg                  reg1_read_o,
+    output reg                  reg2_read_o,
+    output reg  [`RegAddrBus]   reg1_addr_o,
+    output reg  [`RegAddrBus]   reg2_addr_o,
+    //output to execute stage
+    output reg  [`AluOpBus]     aluop_o,    // the specifical operate signal
+    output reg  [`AluSelBus]    alusel_o,   // the operation type
+    output reg  [`RegBus]       reg1_o,
+    output reg  [`RegBus]       reg2_o,
+    output reg  [4:0]           wd_o,
+    output reg  [`RegBus]       imm_o
+);
+
+//getting the operation code and func3 and func7
+wire [6:0]         op1=inst_i[6:0];          //opcode
+wire [2:0]         op2=inst_i[14:12];        //func3 or part of imm
+wire [6:0]         op3=inst_i[31:25];        //func7
+
+//conserve the instruction needed imm
+    //output to execute stage
+reg  [`AluOpBus]     aluop;    // the specifical operate signal
+reg  [`AluSelBus]    alusel;   // the operation type
+reg  [`RegBus]       reg1;
+reg  [`RegBus]       reg2;
+reg  [4:0]           wd;
+reg  [`RegBus]       imm;
+
+
+
+
+
+
+
+//********************************************************//
+//************************main code***********************//
+//********************************************************//
+//stage one : decode
+always @(*) begin
+if(rst ==`RstEnable) begin
+        aluop &lt;= `EXE_NOP_OP  ;
+        alusel &lt;= `EXE_RES_NOP;     
+        wd &lt;= `NOPRegAddr;
+        reg1_read_o &lt;= 1&apos;b0;
+        reg2_read_o &lt;= 1&apos;b0;
+        reg1_addr_o &lt;= `NOPRegAddr;
+        reg2_addr_o &lt;= `NOPRegAddr;
+        imm &lt;= 32&apos;h0;
+end 
+else begin
+        aluop &lt;= `EXE_NOP_OP  ;
+        alusel &lt;= `EXE_RES_NOP;
+        wd &lt;= `NOPRegAddr;
+        reg1_read_o&lt;= 1&apos;b0;
+        reg2_read_o&lt;= 1&apos;b0;
+        reg1_addr_o&lt;= inst_i[19:15];//default read from regfile pole one
+        reg2_addr_o &lt;= inst_i[25:21];//default read from regfile pole two
+        imm &lt;= `ZeroWord;       
+    case (op1)
+        `EXE_R_OP:   begin   //R type opcode
+                     case (op2)
+                     3&apos;b000:begin
+                                case(op3)
+                                
+                                `EXE_ADD:begin
+                                 aluop&lt;= `EXE_ADD_OP;
+                                 alusel&lt;=`EXE_RES_R ;
+                                 reg1_read_o&lt;=1&apos;b1;
+                                 reg2_read_o&lt;=1&apos;b1;
+                                 imm&lt;=32&apos;h0;
+                                 wd&lt;=inst_i[11:7];
+                                 end
+                                 
+                                `EXE_SUB:begin
+                                 aluop &lt;= `EXE_SUB_OP;
+                                 alusel&lt;=`EXE_RES_R;
+                                 reg1_read_o&lt;=1&apos;b1;
+                                 reg2_read_o&lt;=1&apos;b1;
+                                 imm&lt;=32&apos;h0 ;                                          
+                                 wd&lt;=inst_i[11:7];
+                                 end
+                                 default:begin
+                                 end
+                                 endcase//op3
+                      end//3&apos;b000
+                      
+                     `EXE_OR:begin
+                      
+                      aluop&lt;= `EXE_OR_OP;
+                      alusel&lt;=`EXE_RES_R;
+                      reg1_read_o&lt;=1&apos;b1;
+                      reg2_read_o&lt;=1&apos;b1;
+                      imm&lt;=32&apos;h0;              
+                      wd&lt;=inst_i[11:7];
+                      end
+                      
+                     `EXE_AND:begin
+                      aluop &lt;= `EXE_AND_OP;
+                      alusel&lt;=`EXE_RES_R;
+                      reg1_read_o&lt;=1&apos;b1;
+                      reg2_read_o&lt;=1&apos;b1;
+                      imm&lt;=32&apos;h0;     
+                      wd&lt;=inst_i[11:7];
+                      end
+                      
+                     `EXE_XOR:begin
+                      aluop&lt;= `EXE_XOR_OP;
+                      alusel&lt;=`EXE_RES_R;
+                      reg1_read_o&lt;=1&apos;b1;
+                      reg2_read_o&lt;=1&apos;b1;
+                      imm&lt;=32&apos;h0;                
+                      wd&lt;=inst_i[11:7];
+                      end
+                      default:begin
+                      end
+                      endcase//op2
+        end//EXE_R_OP
+        
+        `EXE_I_OP:  begin//I_TYPE
+                    case(op2)
+                    
+                    `EXE_ANDI:begin
+                    aluop &lt;= `EXE_AND_OP;
+                    alusel&lt;= `EXE_RES_I;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b0;
+                    if(inst_i[31]==1&apos;b1)begin
+                    imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                    imm&lt;={20&apos;h00000,inst_i[31:20]};
+                    end
+                    else begin
+                    end                   
+                    wd&lt;=inst_i[11:7];
+                    end
+                    
+                    
+                    `EXE_ORI:begin
+                    aluop &lt;= `EXE_OR_OP;
+                    alusel&lt;=`EXE_RES_I;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b0;
+                    if(inst_i[31]==1&apos;b1)begin
+                    imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                    imm&lt;={20&apos;h00000,inst_i[31:20]};
+                    end
+                    else begin
+                    end                   
+                    wd&lt;=inst_i[11:7];
+                    end
+                    
+                    
+                    `EXE_ADDI:begin
+                    aluop &lt;= `EXE_ADD_OP;
+                    alusel&lt;=`EXE_RES_I ;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b0;
+                    if(inst_i[31]==1&apos;b1)begin
+                    imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                    imm&lt;={20&apos;h00000,inst_i[31:20]};
+                    end
+                    else begin
+                    end                   
+                    wd&lt;=inst_i[11:7];
+                    end
+                    
+                    
+                    `EXE_XORI:begin
+                    aluop &lt;= `EXE_XOR_OP;
+                    alusel&lt;=`EXE_RES_I;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b0;
+                    if(inst_i[31]==1&apos;b1)begin
+                    imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                    imm&lt;={20&apos;h00000,inst_i[31:20]};
+                    end
+                    else begin
+                    end                   
+                    wd&lt;=inst_i[11:7];
+                    end
+                    default:begin
+                    end
+                    endcase//op2
+         
+        end//EXE_I_OP
+        
+        `EXE_B_OP:begin//B_TYPE
+                    case(op2)
+                    
+                    `EXE_BEQ:begin
+                    aluop &lt;= `EXE_BEQ_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1==reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    `EXE_BNE:begin
+                    aluop &lt;= `EXE_BNE_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1!=reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    `EXE_BLT:begin
+                    aluop &lt;= `EXE_BLT_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1&lt;reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    `EXE_BGE:begin
+                    aluop &lt;= `EXE_BGE_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1&gt;=reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    `EXE_BLTU:begin
+                    aluop &lt;= `EXE_BLTU_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1&lt;reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    `EXE_BGEU:begin
+                    aluop &lt;= `EXE_BGEU_OP;
+                    reg1_read_o&lt;=1&apos;b1;
+                    reg2_read_o&lt;=1&apos;b1;
+                    if(inst_i[31]==1&apos;b1)begin
+                        imm&lt;={20&apos;hFFFFF,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                    else if(inst_i[31]==1&apos;b0)begin
+                        imm&lt;={20&apos;h00000,inst_i[7],inst_i[30:25],inst_i[11:8],1&apos;b0};
+                    end
+                        else begin
+                    end                
+                    if(reg1&gt;=reg2)begin
+                        alusel&lt;=`EXE_RES_B;
+                    end
+                    else begin
+                         alusel&lt;=`EXE_RES_NB;
+                    end
+                    wd&lt;=`NOPRegAddr;
+                    end
+                    
+                    default:begin
+                    end
+                    endcase          
+        end//EXE_B_OP
+        
+        `EXE_LW_OP:begin//I_TYPE_INSTR
+         aluop &lt;= `EXE_LW_OP;
+         alusel&lt;=`EXE_RES_LW;
+         reg1_read_o&lt;=1&apos;b1;
+         reg2_read_o&lt;=1&apos;b0;
+         if(inst_i[31]==1&apos;b1)begin      
+         imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+         end                            
+         else if(inst_i[31]==1&apos;b0)begin 
+         imm&lt;={20&apos;h00000,inst_i[31:20]};
+         end                            
+         else begin                     
+         end                            
+         wd&lt;=inst_i[11:7];
+         end//EXE_LW_OP
+        
+        `EXE_SW_OP:begin
+         aluop &lt;= `EXE_SW_OP;
+         alusel&lt;=`EXE_RES_SW;
+         reg1_read_o&lt;=1&apos;b1;
+         reg2_read_o&lt;=1&apos;b1;
+         if(inst_i[31]==1&apos;b1)begin      
+         imm&lt;={20&apos;hFFFFF,inst_i[31:25],inst_i[11:7]};
+         end                            
+         else if(inst_i[31]==1&apos;b0)begin 
+         imm&lt;={20&apos;h00000,inst_i[31:25],inst_i[11:7]};
+         end                            
+         else begin                     
+         end                                     
+         end//EXE_SW_OP
+        
+        `EXE_JAL_OP:begin
+         
+         aluop &lt;= `EXE_JAL_OP;
+         alusel&lt;=`EXE_RES_JAL;
+         reg1_read_o&lt;=1&apos;b0;
+         reg2_read_o&lt;=1&apos;b0;
+         if(inst_i[31]==1&apos;b1)begin      
+         imm&lt;={12&apos;hFFF,inst_i[19:12],inst_i[20],inst_i[30:21],1&apos;b0};
+         end                            
+         else if(inst_i[31]==1&apos;b0)begin 
+         imm&lt;={12&apos;h000,inst_i[19:12],inst_i[20],inst_i[30:21],1&apos;b0};
+         end                            
+         else begin                     
+         end              
+         wd&lt;=inst_i[11:7];
+         
+        end//EXE_JAL_OP
+        
+        `EXE_JALR_OP :begin
+         
+         aluop &lt;= `EXE_JALR_OP;
+         alusel&lt;=`EXE_RES_JALR;
+         reg1_read_o&lt;=1&apos;b1;
+         reg2_read_o&lt;=1&apos;b0; 
+         if(inst_i[31]==1&apos;b1)begin
+         imm&lt;={20&apos;hFFFFF,inst_i[31:20]};
+         end
+         else if(inst_i[31]==1&apos;b0)begin
+         imm&lt;={20&apos;h00000,inst_i[31:20]};
+         end
+         else begin
+         end                   
+         wd&lt;=inst_i[11:7];
+        end//EXE_JALR_OP 
+        
+        default:begin
+        end
+    endcase//op1    
+   end//else     
+end//always       
+        
+
+always@(*)begin
+    if(rst ==`RstEnable)begin
+        reg1&lt;=`ZeroWord;
+    end
+    else if(reg1_read_o==1&apos;b1)begin
+        reg1&lt;=reg1_data_i;
+    end
+    else if(reg1_read_o==1&apos;b0)begin
+        reg1&lt;=imm;
+    end
+    else begin
+        reg1&lt;=`ZeroWord;
+    end
+end    
+
+always@(*)begin
+    if(rst ==`RstEnable)begin
+        reg2&lt;=`ZeroWord;
+    end
+    else if(reg2_read_o==1&apos;b1)begin
+        reg2&lt;=reg2_data_i;
+    end
+    else if(reg2_read_o==1&apos;b0)begin
+        reg2&lt;=imm;
+    end
+    else begin
+        reg2&lt;=`ZeroWord;
+    end
+end    
+always@(posedge id_en or posedge rst)begin
+    if(rst==`RstEnable)begin
+        aluop_o &lt;= `EXE_NOP_OP  ;
+        alusel_o &lt;= `EXE_RES_NOP;
+        wd_o &lt;= `NOPRegAddr;
+        reg1_o&lt;=`ZeroWord;
+        reg2_o&lt;=`ZeroWord;
+        imm_o&lt;=32&apos;h0;
+    end
+    else begin
+        aluop_o &lt;= aluop;
+        alusel_o &lt;=alusel;
+        wd_o &lt;= wd;
+        reg1_o&lt;=reg1;
+        reg2_o&lt;=reg2;
+        imm_o&lt;=imm;
+    end
+end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>reg1_read_o,reg2_read_o,reg1_addr_o:5,reg2_addr_o:5,aluop_o:3,alusel_o:7,reg1_o:32,reg2_o:32,wd_o:5,imm_o:32</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>10</int>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>pc</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>rst,pc_en,branch:32,branch_en</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>10</int>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>pc:32,pc_plus_4:32</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>// global define
+`define RstEnable 1&apos;b1
+`define RstDisable 1&apos;b0
+`define WriteEnable 1&apos;b1
+`define WriteDisable 1&apos;b0
+`define ReadEnable 1&apos;b1
+`define ReadDisable 1&apos;b0
+`define AluOpBus    6:0 //the width of translation aluop_o
+`define AluSelBus   2:0 //the width of translation alusel_o
+`define InstValid   1&apos;b0 //vaild operator
+`define InstInvalid 1&apos;b1 //invaild operator
+`define True_v      1&apos;b1//meaning true
+`define False_v     1&apos;b0//meaning false
+`define ChipDisable 1&apos;b0//chip enable
+`define ChipEnable  1&apos;b1//chip ban
+
+//opcode
+`define EXE_R_OP          7&apos;b0110011//R type opcode
+`define EXE_I_OP          7&apos;b0010011//I type opcode
+`define EXE_B_OP          7&apos;b1100011//B type opcode
+
+//special 4 instructions opcode
+`define EXE_LW        7&apos;b0000011
+`define EXE_SW        7&apos;b0100011
+`define EXE_JAL       7&apos;b1101111
+`define EXE_JALR      7&apos;b1100111
+
+//func3
+`define EXE_OR            3&apos;b110
+`define EXE_AND           3&apos;b111
+`define EXE_ORI           3&apos;b110
+`define EXE_ADDI          3&apos;b000
+`define EXE_ANDI          3&apos;b111
+`define EXE_BEQ           3&apos;b000
+`define EXE_BNE           3&apos;b001 
+`define EXE_BLT           3&apos;b100
+`define EXE_BGE           3&apos;b101
+`define EXE_BLTU          3&apos;b110
+`define EXE_BGEU          3&apos;b111
+`define EXE_XOR           3&apos;b100
+`define EXE_XORI          3&apos;b100
+
+// func7
+`define EXE_ADD           7&apos;b0000000 
+`define EXE_SUB           7&apos;b0100000
+
+//AluSel
+`define EXE_RES_NOP                      7&apos;b0000000
+`define EXE_RES_R                        7&apos;b0000101
+`define EXE_RES_I                        7&apos;b0100101
+`define EXE_RES_LW                       7&apos;b0101001
+`define EXE_RES_SW                       7&apos;b0111001
+`define EXE_RES_B                        7&apos;b1100010
+`define EXE_RES_NB                       7&apos;b0000000
+`define EXE_RES_JAL                      7&apos;b1100011
+`define EXE_RES_JALR                     7&apos;b1100111
+
+//Aluop
+//`define EXE_OR_OP 
+//`define EXE_ADD_OP 
+`define EXE_NOP_OP        3&apos;b000//0
+`define EXE_OR_OP         3&apos;b001//1
+`define EXE_AND_OP        3&apos;b010//2
+`define EXE_XOR_OP        3&apos;b011//3
+                          
+`define EXE_ADD_OP        3&apos;b100//4
+`define EXE_SUB_OP        3&apos;b101//5
+                          
+`define EXE_LW_OP         3&apos;b101//4
+`define EXE_SW_OP         3&apos;b101//4
+                          
+`define EXE_BEQ_OP        3&apos;b101//4
+`define EXE_BNE_OP        3&apos;b101//4
+`define EXE_BLT_OP        3&apos;b101//4
+`define EXE_BGE_OP        3&apos;b101//4
+`define EXE_BLTU_OP       3&apos;b101//4
+`define EXE_BGEU_OP       3&apos;b101//4
+                          
+`define EXE_JAL_OP        3&apos;b101//4
+`define EXE_JALR_OP       3&apos;b101//4
+
+//transer define
+`define Branch      1&apos;b1//transer 
+`define NotBranch   1&apos;b0//not transfer
+
+//instruction memory about rom
+`define ZeroWord    32&apos;h00000000
+`define InstAddrBus 31:0  //address
+`define InstBus     31:0 //Data
+`define InstMemNum  131071 //rom fact size 128K
+`define InstMemNumLog2 17     //the real width of rom
+
+
+//************************ reg total define
+`define RegAddrBus  4:0   //regfile addr width
+`define RegBus      31:0  //regfile data width
+`define RegWidth    32    //in common use reg width
+`define DoubleRegwidth 64 // double reg width
+`define DoubleRegBus  63:0 //double data width
+`define RegNum        32 //the num of reg
+`define RegNumLog2    5 //the num of common reg
+`define NOPRegAddr    5&apos;b00000
+
+module pc(
+    input   wire                                        rst,
+    input   wire                                        pc_en,
+    input   wire[`InstAddrBus]                          branch,//transer address
+    input   wire                                        branch_en,//jump enable
+    
+    output  reg  [`RegBus]                                pc,//[31:0]
+    output  wire  [`RegBus]                             pc_plus_4
+);
+//************************* main code *************************//
+assign pc_plus_4=pc+&apos;d4;
+
+always@(posedge pc_en or posedge rst)begin
+    if(rst==`RstEnable)begin
+        pc&lt;=32&apos;h00000000;       //rst to clear out the data
+    end
+    else if (pc_en)begin         // when pc_en is high for one period,the pc value will upgrade
+        if(branch_en==`Branch)begin  
+            pc&lt;=branch;
+        end
+        else begin
+            pc&lt;=pc+4;
+        end
+    end
+    else begin
+        pc &lt;= pc;
+    end
+end
+//************************************************************//
+endmodule</string>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>regfile</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>clk,rst,we,waddr:5,wdata:32,re1,raddr1:5,re2,raddr2:5</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>// global define
+`define RstEnable 1&apos;b1
+`define RstDisable 1&apos;b0
+`define WriteEnable 1&apos;b1
+`define WriteDisable 1&apos;b0
+`define ReadEnable 1&apos;b1
+`define ReadDisable 1&apos;b0
+`define AluOpBus    6:0 //the width of translation aluop_o
+`define AluSelBus   2:0 //the width of translation alusel_o
+`define InstValid   1&apos;b0 //vaild operator
+`define InstInvalid 1&apos;b1 //invaild operator
+`define True_v      1&apos;b1//meaning true
+`define False_v     1&apos;b0//meaning false
+`define ChipDisable 1&apos;b0//chip enable
+`define ChipEnable  1&apos;b1//chip ban
+
+//opcode
+`define EXE_R_OP          7&apos;b0110011//R type opcode
+`define EXE_I_OP          7&apos;b0010011//I type opcode
+`define EXE_B_OP          7&apos;b1100011//B type opcode
+
+//special 4 instructions opcode
+`define EXE_LW        7&apos;b0000011
+`define EXE_SW        7&apos;b0100011
+`define EXE_JAL       7&apos;b1101111
+`define EXE_JALR      7&apos;b1100111
+
+//func3
+`define EXE_OR            3&apos;b110
+`define EXE_AND           3&apos;b111
+`define EXE_ORI           3&apos;b110
+`define EXE_ADDI          3&apos;b000
+`define EXE_ANDI          3&apos;b111
+`define EXE_BEQ           3&apos;b000
+`define EXE_BNE           3&apos;b001 
+`define EXE_BLT           3&apos;b100
+`define EXE_BGE           3&apos;b101
+`define EXE_BLTU          3&apos;b110
+`define EXE_BGEU          3&apos;b111
+`define EXE_XOR           3&apos;b100
+`define EXE_XORI          3&apos;b100
+
+// func7
+`define EXE_ADD           7&apos;b0000000 
+`define EXE_SUB           7&apos;b0100000
+
+//AluSel
+`define EXE_RES_NOP                      7&apos;b0000000
+`define EXE_RES_R                        7&apos;b0000101
+`define EXE_RES_I                        7&apos;b0100101
+`define EXE_RES_LW                       7&apos;b0101001
+`define EXE_RES_SW                       7&apos;b0111001
+`define EXE_RES_B                        7&apos;b1100010
+`define EXE_RES_NB                       7&apos;b0000000
+`define EXE_RES_JAL                      7&apos;b1100011
+`define EXE_RES_JALR                     7&apos;b1100111
+
+//Aluop
+//`define EXE_OR_OP 
+//`define EXE_ADD_OP 
+`define EXE_NOP_OP        3&apos;b000//0
+`define EXE_OR_OP         3&apos;b001//1
+`define EXE_AND_OP        3&apos;b010//2
+`define EXE_XOR_OP        3&apos;b011//3
+                          
+`define EXE_ADD_OP        3&apos;b100//4
+`define EXE_SUB_OP        3&apos;b101//5
+                          
+`define EXE_LW_OP         3&apos;b101//4
+`define EXE_SW_OP         3&apos;b101//4
+                          
+`define EXE_BEQ_OP        3&apos;b101//4
+`define EXE_BNE_OP        3&apos;b101//4
+`define EXE_BLT_OP        3&apos;b101//4
+`define EXE_BGE_OP        3&apos;b101//4
+`define EXE_BLTU_OP       3&apos;b101//4
+`define EXE_BGEU_OP       3&apos;b101//4
+                          
+`define EXE_JAL_OP        3&apos;b101//4
+`define EXE_JALR_OP       3&apos;b101//4
+
+//transer define
+`define Branch      1&apos;b1//transer 
+`define NotBranch   1&apos;b0//not transfer
+
+//instruction memory about rom
+`define ZeroWord    32&apos;h00000000
+`define InstAddrBus 31:0  //address
+`define InstBus     31:0 //Data
+`define InstMemNum  131071 //rom fact size 128K
+`define InstMemNumLog2 17     //the real width of rom
+
+
+//************************ reg total define
+`define RegAddrBus  4:0   //regfile addr width
+`define RegBus      31:0  //regfile data width
+`define RegWidth    32    //in common use reg width
+`define DoubleRegwidth 64 // double reg width
+`define DoubleRegBus  63:0 //double data width
+`define RegNum        32 //the num of reg
+`define RegNumLog2    5 //the num of common reg
+`define NOPRegAddr    5&apos;b00000
+
+module regfile (
+    input wire                  clk,
+    input wire                  rst,
+
+    input wire                  we,
+    input wire[`RegAddrBus]     waddr,
+    input wire[`RegBus]         wdata,
+
+    input wire                  re1,
+    input wire[`RegAddrBus]     raddr1,
+    output reg[`RegBus]         rdata1,
+
+    input wire                  re2,
+    input wire[`RegAddrBus]     raddr2,
+    output reg[`RegBus]         rdata2
+
+
+);
+
+    reg[`RegBus] regs[0:`RegNum-1];
+
+    always @ (posedge clk) begin
+        if (rst == `RstDisable) begin
+            if (we == `WriteEnable &amp;&amp; waddr != `NOPRegAddr) begin
+                regs[waddr] &lt;= wdata;
+            end
+        end
+    end
+
+    always @ (*) begin
+        if (rst == `RstEnable) begin
+            rdata1 &lt;= `ZeroWord;
+        end else if (re1 == `ReadEnable) begin
+            if (raddr1 == waddr &amp;&amp; we == `WriteEnable) begin
+                rdata1 &lt;= wdata;
+            end else if (raddr1 == `NOPRegAddr) begin
+                rdata1 &lt;= `ZeroWord;
+            end else begin
+                rdata1 &lt;= regs[raddr1];
+            end
+        end else begin
+            rdata1 &lt;= `ZeroWord;
+        end
+    end
+
+    always @ (*) begin
+        if (rst == `RstEnable) begin
+            rdata2 &lt;= `ZeroWord;
+        end else if (re2 == `ReadEnable) begin
+            if (raddr2 == waddr &amp;&amp; we == `WriteEnable) begin
+                rdata2 &lt;= wdata;
+            end else if (raddr2 == `ZeroWord) begin
+                rdata2 &lt;= `ZeroWord;
+            end else begin
+                rdata2 &lt;= regs[raddr2];
+            end
+        end else begin
+            rdata2 &lt;= `ZeroWord;
+        end
+    end
+    
+    always @(negedge we) begin
+        $display(&quot;x3: %d, x4: %d&quot;, regs[3], regs[4]);
+    end 
+
+    
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>rdata1:32,rdata2:32</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>10</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1440" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes/>
+      <pos x="700" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="860" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes/>
+      <pos x="700" y="420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="240"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="780" y="160"/>
-      <p2 x="920" y="160"/>
+      <p1 x="1100" y="320"/>
+      <p2 x="1120" y="320"/>
     </wire>
     <wire>
-      <p1 x="700" y="320"/>
-      <p2 x="740" y="320"/>
+      <p1 x="1280" y="320"/>
+      <p2 x="1440" y="320"/>
     </wire>
     <wire>
-      <p1 x="1120" y="320"/>
-      <p2 x="1200" y="320"/>
+      <p1 x="720" y="960"/>
+      <p2 x="1340" y="960"/>
     </wire>
     <wire>
       <p1 x="440" y="260"/>
@@ -287,195 +1116,483 @@
     </wire>
     <wire>
       <p1 x="700" y="260"/>
-      <p2 x="740" y="260"/>
+      <p2 x="720" y="260"/>
     </wire>
     <wire>
       <p1 x="820" y="260"/>
-      <p2 x="920" y="260"/>
+      <p2 x="900" y="260"/>
     </wire>
     <wire>
-      <p1 x="700" y="420"/>
-      <p2 x="740" y="420"/>
+      <p1 x="1100" y="260"/>
+      <p2 x="1380" y="260"/>
     </wire>
     <wire>
-      <p1 x="900" y="200"/>
-      <p2 x="920" y="200"/>
+      <p1 x="1640" y="260"/>
+      <p2 x="1680" y="260"/>
     </wire>
     <wire>
-      <p1 x="340" y="40"/>
-      <p2 x="440" y="40"/>
+      <p1 x="1420" y="260"/>
+      <p2 x="1440" y="260"/>
     </wire>
     <wire>
-      <p1 x="440" y="40"/>
-      <p2 x="1220" y="40"/>
+      <p1 x="820" y="900"/>
+      <p2 x="1200" y="900"/>
     </wire>
     <wire>
-      <p1 x="1380" y="360"/>
-      <p2 x="1420" y="360"/>
+      <p1 x="800" y="580"/>
+      <p2 x="900" y="580"/>
     </wire>
     <wire>
-      <p1 x="700" y="360"/>
-      <p2 x="740" y="360"/>
+      <p1 x="780" y="200"/>
+      <p2 x="1660" y="200"/>
     </wire>
     <wire>
-      <p1 x="1120" y="360"/>
-      <p2 x="1140" y="360"/>
+      <p1 x="780" y="520"/>
+      <p2 x="900" y="520"/>
     </wire>
     <wire>
-      <p1 x="700" y="300"/>
-      <p2 x="780" y="300"/>
+      <p1 x="800" y="460"/>
+      <p2 x="900" y="460"/>
     </wire>
     <wire>
-      <p1 x="400" y="300"/>
-      <p2 x="540" y="300"/>
+      <p1 x="840" y="140"/>
+      <p2 x="900" y="140"/>
     </wire>
     <wire>
-      <p1 x="860" y="300"/>
-      <p2 x="920" y="300"/>
+      <p1 x="1100" y="780"/>
+      <p2 x="1420" y="780"/>
     </wire>
     <wire>
-      <p1 x="820" y="300"/>
-      <p2 x="840" y="300"/>
+      <p1 x="840" y="80"/>
+      <p2 x="900" y="80"/>
     </wire>
     <wire>
-      <p1 x="900" y="140"/>
-      <p2 x="920" y="140"/>
+      <p1 x="1100" y="80"/>
+      <p2 x="1140" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="720"/>
+      <p2 x="1160" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="400"/>
+      <p2 x="1440" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="400"/>
+      <p2 x="1240" y="400"/>
     </wire>
     <wire>
       <p1 x="700" y="400"/>
-      <p2 x="880" y="400"/>
-    </wire>
-    <wire>
-      <p1 x="1160" y="400"/>
-      <p2 x="1200" y="400"/>
-    </wire>
-    <wire>
-      <p1 x="840" y="240"/>
-      <p2 x="920" y="240"/>
+      <p2 x="820" y="400"/>
     </wire>
     <wire>
       <p1 x="340" y="-20"/>
       <p2 x="500" y="-20"/>
     </wire>
     <wire>
-      <p1 x="900" y="-20"/>
-      <p2 x="1220" y="-20"/>
+      <p1 x="860" y="-20"/>
+      <p2 x="1400" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="-20"/>
+      <p2 x="860" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="-20"/>
+      <p2 x="840" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="-20"/>
+      <p2 x="1540" y="-20"/>
     </wire>
     <wire>
       <p1 x="500" y="-20"/>
-      <p2 x="900" y="-20"/>
+      <p2 x="800" y="-20"/>
     </wire>
     <wire>
-      <p1 x="880" y="180"/>
-      <p2 x="920" y="180"/>
-    </wire>
-    <wire>
-      <p1 x="820" y="180"/>
-      <p2 x="860" y="180"/>
+      <p1 x="1100" y="340"/>
+      <p2 x="1200" y="340"/>
     </wire>
     <wire>
       <p1 x="700" y="340"/>
-      <p2 x="740" y="340"/>
+      <p2 x="720" y="340"/>
     </wire>
     <wire>
-      <p1 x="820" y="340"/>
-      <p2 x="860" y="340"/>
-    </wire>
-    <wire>
-      <p1 x="1140" y="340"/>
-      <p2 x="1200" y="340"/>
+      <p1 x="1420" y="340"/>
+      <p2 x="1440" y="340"/>
     </wire>
     <wire>
       <p1 x="500" y="280"/>
       <p2 x="540" y="280"/>
     </wire>
     <wire>
+      <p1 x="780" y="280"/>
+      <p2 x="900" y="280"/>
+    </wire>
+    <wire>
       <p1 x="700" y="280"/>
-      <p2 x="740" y="280"/>
+      <p2 x="760" y="280"/>
     </wire>
     <wire>
-      <p1 x="840" y="280"/>
-      <p2 x="920" y="280"/>
+      <p1 x="1100" y="280"/>
+      <p2 x="1360" y="280"/>
     </wire>
     <wire>
-      <p1 x="700" y="440"/>
-      <p2 x="1160" y="440"/>
+      <p1 x="1640" y="280"/>
+      <p2 x="1660" y="280"/>
     </wire>
     <wire>
-      <p1 x="700" y="380"/>
-      <p2 x="900" y="380"/>
+      <p1 x="1400" y="280"/>
+      <p2 x="1440" y="280"/>
     </wire>
     <wire>
-      <p1 x="1160" y="380"/>
-      <p2 x="1200" y="380"/>
+      <p1 x="800" y="920"/>
+      <p2 x="1220" y="920"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="600"/>
+      <p2 x="900" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="540"/>
+      <p2 x="1140" y="540"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="540"/>
+      <p2 x="900" y="540"/>
     </wire>
     <wire>
       <p1 x="860" y="220"/>
-      <p2 x="920" y="220"/>
+      <p2 x="900" y="220"/>
     </wire>
     <wire>
-      <p1 x="820" y="220"/>
-      <p2 x="840" y="220"/>
+      <p1 x="1100" y="220"/>
+      <p2 x="1320" y="220"/>
     </wire>
     <wire>
-      <p1 x="1080" y="220"/>
-      <p2 x="1160" y="220"/>
+      <p1 x="500" y="860"/>
+      <p2 x="840" y="860"/>
     </wire>
     <wire>
-      <p1 x="1160" y="220"/>
-      <p2 x="1200" y="220"/>
+      <p1 x="880" y="860"/>
+      <p2 x="1140" y="860"/>
     </wire>
     <wire>
-      <p1 x="880" y="180"/>
-      <p2 x="880" y="400"/>
+      <p1 x="740" y="480"/>
+      <p2 x="900" y="480"/>
     </wire>
     <wire>
-      <p1 x="900" y="-20"/>
-      <p2 x="900" y="140"/>
+      <p1 x="880" y="800"/>
+      <p2 x="900" y="800"/>
     </wire>
     <wire>
-      <p1 x="900" y="200"/>
-      <p2 x="900" y="380"/>
+      <p1 x="720" y="100"/>
+      <p2 x="900" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="100"/>
+      <p2 x="1160" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="1360" y="420"/>
+      <p2 x="1440" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="420"/>
+      <p2 x="1120" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="740"/>
+      <p2 x="900" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="40"/>
+      <p2 x="440" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="40"/>
+      <p2 x="1580" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="40"/>
+      <p2 x="1420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="680"/>
+      <p2 x="1140" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="360"/>
+      <p2 x="840" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="1320" y="360"/>
+      <p2 x="1440" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="360"/>
+      <p2 x="1220" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="300"/>
+      <p2 x="900" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="300"/>
+      <p2 x="1180" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="300"/>
+      <p2 x="540" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="300"/>
+      <p2 x="740" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1340" y="300"/>
+      <p2 x="1440" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="620"/>
+      <p2 x="900" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="940"/>
+      <p2 x="1240" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="240"/>
+      <p2 x="900" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="240"/>
+      <p2 x="1300" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="560"/>
+      <p2 x="900" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="180"/>
+      <p2 x="1680" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="500"/>
+      <p2 x="900" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="820"/>
+      <p2 x="900" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="120"/>
+      <p2 x="900" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="440"/>
+      <p2 x="1140" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="760"/>
+      <p2 x="900" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="1380" y="380"/>
+      <p2 x="1440" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="380"/>
+      <p2 x="780" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="380"/>
+      <p2 x="1280" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="700"/>
+      <p2 x="1180" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="1280" y="320"/>
+      <p2 x="1280" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="360"/>
+      <p2 x="1220" y="920"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="-20"/>
+      <p2 x="840" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="140"/>
+      <p2 x="840" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="420"/>
+      <p2 x="840" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="1160" y="100"/>
+      <p2 x="1160" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="200"/>
+      <p2 x="780" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="600"/>
+      <p2 x="780" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="380"/>
+      <p2 x="780" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="40"/>
+      <p2 x="1420" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="340"/>
+      <p2 x="1420" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="100"/>
+      <p2 x="720" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="340"/>
+      <p2 x="720" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="1360" y="280"/>
+      <p2 x="1360" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="1680" y="180"/>
+      <p2 x="1680" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="240"/>
+      <p2 x="1300" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="1240" y="400"/>
+      <p2 x="1240" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="440"/>
+      <p2 x="860" y="540"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="-20"/>
+      <p2 x="860" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="620"/>
+      <p2 x="860" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="1180" y="300"/>
+      <p2 x="1180" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="-20"/>
+      <p2 x="800" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="580"/>
+      <p2 x="800" y="920"/>
+    </wire>
+    <wire>
+      <p1 x="1120" y="320"/>
+      <p2 x="1120" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="1380" y="260"/>
+      <p2 x="1380" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="300"/>
+      <p2 x="740" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="1320" y="220"/>
+      <p2 x="1320" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="120"/>
+      <p2 x="880" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="720"/>
+      <p2 x="880" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="800"/>
+      <p2 x="880" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="1200" y="340"/>
+      <p2 x="1200" y="900"/>
     </wire>
     <wire>
       <p1 x="500" y="-20"/>
       <p2 x="500" y="280"/>
     </wire>
     <wire>
-      <p1 x="1140" y="340"/>
-      <p2 x="1140" y="360"/>
+      <p1 x="500" y="300"/>
+      <p2 x="500" y="860"/>
     </wire>
     <wire>
-      <p1 x="1160" y="400"/>
-      <p2 x="1160" y="440"/>
+      <p1 x="1140" y="540"/>
+      <p2 x="1140" y="680"/>
     </wire>
     <wire>
-      <p1 x="1160" y="220"/>
-      <p2 x="1160" y="380"/>
+      <p1 x="1140" y="80"/>
+      <p2 x="1140" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="1140" y="680"/>
+      <p2 x="1140" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="180"/>
+      <p2 x="820" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="560"/>
+      <p2 x="820" y="900"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="400"/>
+      <p2 x="820" y="500"/>
     </wire>
     <wire>
       <p1 x="440" y="40"/>
       <p2 x="440" y="260"/>
     </wire>
     <wire>
-      <p1 x="840" y="220"/>
-      <p2 x="840" y="240"/>
+      <p1 x="760" y="280"/>
+      <p2 x="760" y="300"/>
     </wire>
     <wire>
-      <p1 x="840" y="280"/>
-      <p2 x="840" y="300"/>
+      <p1 x="1400" y="-20"/>
+      <p2 x="1400" y="280"/>
     </wire>
     <wire>
-      <p1 x="780" y="160"/>
-      <p2 x="780" y="300"/>
+      <p1 x="1340" y="300"/>
+      <p2 x="1340" y="960"/>
     </wire>
     <wire>
-      <p1 x="860" y="180"/>
-      <p2 x="860" y="220"/>
+      <p1 x="1660" y="200"/>
+      <p2 x="1660" y="280"/>
     </wire>
     <wire>
-      <p1 x="860" y="300"/>
-      <p2 x="860" y="340"/>
+      <p1 x="700" y="440"/>
+      <p2 x="700" y="820"/>
     </wire>
   </wires>
   <measurementOrdering/>

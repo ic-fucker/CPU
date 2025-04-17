@@ -27,9 +27,9 @@ parameter   Jump = 3'b100;
 reg [2:0]   st_cur;
 reg [2:0]   st_next;
 
-always @(posedge clk or posedge rst)
+always @(posedge clk or posedge rst or negedge rst)
 begin
-    if(rst)
+    if(!rst)
         begin
             PC_en   <= 0;
             ID_en   <= 0;
@@ -103,15 +103,15 @@ always @(*) begin
             end
         default: 
             begin
-                PC_en   <= 0;
-                ID_en   <= 0;
-                EX_en   <= 0;
-                MEM_en  <= 0;
-                WB_en   <= 0;
-                Jump_en <= 0;
-                imm_en  <= 0;
-                L_or_S  <= 0;
-                WB_Ctrl <= 0;
+                PC_en   <= 1;
+                ID_en   <= 1;
+                EX_en   <= 1;
+                MEM_en  <= 1;
+                WB_en   <= 1;
+                Jump_en <= 1;
+                imm_en  <= 1;
+                L_or_S  <= 1;
+                WB_Ctrl <= 1;
                 st_next = PC;
             end
     endcase
