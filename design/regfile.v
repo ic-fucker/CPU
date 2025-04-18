@@ -61,7 +61,7 @@ module regfile (
     end
     
     always @(negedge we) begin
-        $display("x3: %d, x4: %d", regs[3], regs[4]);
+        $display("x1: %h, x2: %h", regs[1], regs[2]);
     end 
 
     

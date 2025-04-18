@@ -7,6 +7,6 @@
 * screenshot    --waveform from testbench
 * peripherals   --design and sim of peripherals
 ## Usage
-iverilog -v -o out -I ../include/ -c ./modules.txt ./top_tb.v 
+iverilog -Wall -v -o out -I ../include/ -c ./modules.txt ./top_tb.v 
 vvp -n out
 gtkwave wave.vcd

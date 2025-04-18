@@ -1,3 +1,4 @@
 from riscv_assembler.convert import *
-cnv = AssemblyConverter ('p', True, True)
+cnv = AssemblyConverter ('p', False, True)
 result = cnv.convert("./test_sw.s")
+print(result)
