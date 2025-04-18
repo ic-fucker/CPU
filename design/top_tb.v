@@ -19,17 +19,17 @@ module top_tb ();
 // 	output  reg 						ce
 // );
 
-reg                         clk;
-reg                         rst;
-wire     [`InstBus]			inst_i;
-wire     [`DataBus]			load_data_in;
+reg                     clk;
+reg                     rst;
+wire    [`InstBus]	inst_i;
+wire    [`DataBus]	load_data_in;
 
 wire    [31:0]		addr_out;
-wire 					    we_out;
-wire    [`DataBus]			store_data_out;
-wire    [`DataBus]			pc;
-wire 					ce;
-wire [31:0] 	rd_data;
+wire 			we_out;
+wire    [`DataBus]	store_data_out;
+wire    [`DataBus]	pc;
+wire 			ce;
+wire	[31:0] 		rd_data;
 
 
 initial begin
@@ -40,21 +40,16 @@ end
 initial begin
     clk = 0;
     forever begin
-        #1
+        #7
         clk = ~clk;
     end
 end
 
 initial begin
     rst = 0;
-    #2
+    #101
     rst = 1;
-
-
-
-
-
-    #100
+    #1000
     $finish;
 end
 
@@ -64,6 +59,7 @@ end
 
 
 RAM u_RAM(
+	.clk		( clk		),
 	.rst     	( rst      ),
 	.addr    	( addr_out     ),
 	.w_r     	( we_out      ),
