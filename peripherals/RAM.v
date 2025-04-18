@@ -26,7 +26,7 @@ always @(negedge clk or negedge rst) begin
         rd_data = 32'b0;
     end
     else    begin
-        if((addr >= 16'h00000000) && (addr <= 16'h00000063))  begin   // CPU select GPIO_Port, communication begins
+        if((addr >= 32'h00000000) && (addr <= 32'h00000063))  begin   // CPU select GPIO_Port, communication begins
             if(w_r == 1'b0) begin   // CPU write RAM
                 ram_reg[addr] = wr_data;
             end

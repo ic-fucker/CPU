@@ -63,7 +63,7 @@ else begin
         reg1_read_o= 1'b0;
         reg2_read_o= 1'b0;
         reg1_addr_o= inst_i[19:15];//default read from regfile pole one
-        reg2_addr_o = inst_i[25:21];//default read from regfile pole two
+        reg2_addr_o = inst_i[24:20];//default read from regfile pole two
         imm = `ZeroWord;       
     case (op1)
         `EXE_R_OP:   begin   //R type opcode
@@ -207,7 +207,7 @@ else begin
             endcase          
         end//EXE_B_OP
         
-        `EXE_LW_OP: begin//I_TYPE_INSTR
+        `EXE_LW: begin//I_TYPE_INSTR
             aluop = `EXE_LW_OP;
             alusel=`EXE_RES_LW;
             reg1_read_o=1'b1;
@@ -216,7 +216,7 @@ else begin
             wd=inst_i[11:7];
         end //EXE_LW_OP
         
-        `EXE_SW_OP: begin
+        `EXE_SW: begin
             aluop = `EXE_SW_OP;
             alusel=`EXE_RES_SW;
             reg1_read_o=1'b1;
@@ -225,7 +225,7 @@ else begin
             wd=`NOPRegAddr;                                    
         end //EXE_SW_OP
         
-        `EXE_JAL_OP:begin
+        `EXE_JAL: begin
             aluop = `EXE_JAL_OP;
             alusel = `EXE_RES_JAL;
             reg1_read_o = 1'b0;
@@ -234,7 +234,7 @@ else begin
             wd = inst_i[11:7];
         end //EXE_JAL_OP
         
-        `EXE_JALR_OP :begin
+        `EXE_JALR: begin
             aluop = `EXE_JALR_OP;
             alusel=`EXE_RES_JALR;
             reg1_read_o=1'b1;

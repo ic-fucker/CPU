@@ -28,7 +28,7 @@ module regfile (
         end
     end
 
-    always @ (*) begin
+    always @ (re1 or raddr1) begin
         if (rst == `RstEnable) begin
             rdata1 <= `ZeroWord;
         end else if (re1 == `ReadEnable) begin
@@ -44,7 +44,7 @@ module regfile (
         end
     end
 
-    always @ (*) begin
+    always @ (re2 or raddr2) begin
         if (rst == `RstEnable) begin
             rdata2 <= `ZeroWord;
         end else if (re2 == `ReadEnable) begin
