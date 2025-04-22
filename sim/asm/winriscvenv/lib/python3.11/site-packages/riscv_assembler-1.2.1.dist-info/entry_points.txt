@@ -1,0 +1,2 @@
+[console_scripts]
+riscv_assembler = riscv_assembler.app:entry_point

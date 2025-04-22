@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: riscv-assembler
+Version: 1.2.1
+Summary: RISC-V Assembly code assembler package for Python.
+Home-page: https://github.com/celebi-pkg/riscv-assembler
+Author: Kaya Celebi
+Author-email: kayacelebi17@gmail.com
+Project-URL: Bug Tracker, https://github.com/celebi-pkg/riscv-assembler/issues
+Project-URL: Changelog, https://github.com/celebi-pkg/riscv-assembler/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bitstring
+
+[![celebi-pkg](https://circleci.com/gh/celebi-pkg/riscv-assembler.svg?style=svg)](https://circleci.com/gh/celebi-pkg/riscv-assembler)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![example](references/mdimg.png)
+# riscv-assembler Documentation
+RISC-V Assembly code assembler package. [View the full documentation here](https://www.riscvassembler.org)
+
+This package contains tools and functions that can convert **RISC-V Assembly code to machine code**. The whole process is implemented using Python purely for understandability, less so for efficiency in computation. These tools can be used to **convert given lines of code or [whole files](#convert) to machine code**. For conversion, output file types are binary, text files, and printing to console. The supported instruction types are **R, I, S, SB, U, and UJ**. Almost all standard instructions are supported, most pseudo instructions are also supported.
+
+Feel free to open an issue or contact me at [kayacelebi17@gmail.com](mailto:kayacelebi17@gmail.com?subject=[GitHub]%20riscv-assembler) with any questions/inquiries.
+
+# Installation
+The package can be installed using pip:
+
+    $ pip install riscv-assembler
+
+If issues arise try:
+
+    $ python3 -m pip install riscv-assembler
