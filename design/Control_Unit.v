@@ -25,7 +25,7 @@ parameter [2:0] WB  = 3'b100;
 reg [2:0]   st_cur;
 reg [2:0]   st_next;
 
-always @(posedge clk or posedge rst)
+    always @(posedge clk or negedge rst)
 begin
     if(!rst)
         begin
