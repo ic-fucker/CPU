@@ -16,28 +16,28 @@ module Control_Uint(
     output reg  [1:0]   WB_Ctrl
 );
 
-parameter   PC  = 3'b000;
-parameter   ID  = 3'b001;
-parameter   EX  = 3'b010;
-parameter   MEM = 3'b011;
-parameter   WB  = 3'b100;
+parameter [2:0] PC  = 3'b000;
+parameter [2:0] ID  = 3'b001;
+parameter [2:0] EX  = 3'b010;
+parameter [2:0] MEM = 3'b011;
+parameter [2:0] WB  = 3'b100;
 
 reg [2:0]   st_cur;
 reg [2:0]   st_next;
 
-always @(posedge clk or posedge rst or negedge rst)
+always @(posedge clk or posedge rst)
 begin
     if(!rst)
         begin
-            PC_en   = 0;
-            ID_en   = 0;
-            EX_en   = 0;
-            MEM_en  = 0;
-            WB_en   = 0;
-            Jump_en = 0;
-            imm_en  = 0;
-            L_or_S  = 0;
-            WB_Ctrl = 0;
+            PC_en   <= 0;
+            ID_en   <= 0;
+            EX_en   <= 0;
+            MEM_en  <= 0;
+            WB_en   <= 0;
+            Jump_en <= 0;
+            imm_en  <= 0;
+            L_or_S  <= 0;
+            WB_Ctrl <= 0;
 
             st_cur  <= PC;
         end
