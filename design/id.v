@@ -174,7 +174,7 @@ else begin
                     
             `EXE_BGE: begin
                 aluop = `EXE_BGE_OP;
-                if($signed(reg1) >= $signed(reg2))begin
+                if($signed(reg1) > $signed(reg2))begin
                     alusel=`EXE_RES_B;
                 end
                 else begin
@@ -184,7 +184,7 @@ else begin
                     
             `EXE_BLTU: begin
                 aluop = `EXE_BLTU_OP;
-                if($unsigned(reg1) < $unsigned(reg2))begin
+		    if($unsigned(reg1) <= $unsigned(reg2))begin
                     alusel=`EXE_RES_B;
                 end
                 else begin
