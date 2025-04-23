@@ -101,15 +101,15 @@ always @(*) begin
             end
         default: 
             begin
-                PC_en   <= 0;
-                ID_en   <= 0;
-                EX_en   <= 0;
-                MEM_en  <= 0;
-                WB_en   <= 0;
-                Jump_en <= 0;
-                imm_en  <= 0;
-                L_or_S  <= 0;
-                WB_Ctrl <= 0;
+                PC_en   = 0;
+                ID_en   = 0;
+                EX_en   = 0;
+                MEM_en  = 0;
+                WB_en   = 0;
+                Jump_en = 0;
+                imm_en  = 0;
+                L_or_S  = 0;
+                WB_Ctrl = 0;
                 st_next = PC;
             end
     endcase
