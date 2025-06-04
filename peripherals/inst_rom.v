@@ -15,7 +15,7 @@ initial begin
     //inst_mem[3]  = 32'h04018213;// 0000 0100 0000 0001 1000 0010 0001 0011;
     //inst_mem[0] = 32'b1111_1111_1111_0000_0000_0000_1001_0011;
     //inst_mem[1] = 32'b0000_0000_0001_0000_0010_0000_0010_0011;
-    $readmemh("../sim/asm/test.data",inst_mem);
+    $readmemh("../sim/asm/streamled",inst_mem);
 end
 always @(addr or ce) begin
     if(ce == `ChipDisable) begin

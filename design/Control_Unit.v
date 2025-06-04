@@ -23,7 +23,7 @@ parameter [2:0] MEM = 3'b011;
 parameter [2:0] WB  = 3'b100;
 
 reg [2:0]   st_cur;
-reg [2:0]   st_next;
+reg [2:0]   st_nxt;
 
     always @(posedge clk or negedge rst)
 begin
@@ -43,7 +43,7 @@ begin
         end
     else
         begin
-            st_cur  <=  st_next;
+            st_cur  <=  st_nxt;
         end
 end
 
@@ -51,53 +51,53 @@ always @(*) begin
     case (st_cur)
         PC: 
             begin
-                Jump_en = ALUSEL[6];
                 PC_en   = 1;
                 ID_en   = 0;
                 EX_en   = 0;
                 MEM_en  = 0;
                 WB_en   = 0;
-                st_next = ID;
+                st_nxt = ID;
             end
         ID:
             begin
+                Jump_en = ALUSEL[6];
+		imm_en  = ALUSEL[5];
+                EXPC_en = ALUSEL[2:1] == 2'b01 ? 1 : 0;
+                L_or_S  = ALUSEL[4];
+                WB_Ctrl = ALUSEL[2:1];
                 PC_en   = 0;
                 ID_en   = 1;
                 EX_en   = 0;
                 MEM_en  = 0;
                 WB_en   = 0;                
-                st_next = EX;
+                st_nxt = EX;
             end
         EX:
             begin
-                imm_en  = ALUSEL[5];
-                EXPC_en = ALUSEL[2:1] == 2'b01 ? 1 : 0;
                 PC_en   = 0;
                 ID_en   = 0;
                 EX_en   = 1;
                 MEM_en  = 0;
                 WB_en   = 0; 
-                st_next = ALUSEL[0] ? (ALUSEL[3] ? MEM : WB) : PC;
+                st_nxt = ALUSEL[0] ? (ALUSEL[3] ? MEM : WB) : PC;
             end
         MEM:
             begin
-                L_or_S  = ALUSEL[4];
                 PC_en   = 0;
                 ID_en   = 0;
                 EX_en   = 0;
                 MEM_en  = 1;
                 WB_en   = 0; 
-                st_next = ALUSEL[4] ? PC : WB;
+                st_nxt = ALUSEL[4] ? PC : WB;
             end
         WB:
             begin
-                WB_Ctrl = ALUSEL[2:1];
                 PC_en   = 0;
                 ID_en   = 0;
                 EX_en   = 0;
                 MEM_en  = 0;
                 WB_en   = 1; 
-                st_next = PC;
+                st_nxt = PC;
             end
         default: 
             begin
@@ -110,7 +110,7 @@ always @(*) begin
                 imm_en  = 0;
                 L_or_S  = 0;
                 WB_Ctrl = 0;
-                st_next = PC;
+                st_nxt = PC;
             end
     endcase
 end
